@@ -11,8 +11,8 @@ pipeline
                 steps{
                     script{
                         echo "Building the application"
-                        sh 'mvn clean'
-                        sh 'mvn package'
+                        
+                        sh 'mvn install'
                     }
 
                 }
