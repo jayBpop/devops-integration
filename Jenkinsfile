@@ -3,11 +3,10 @@ pipeline
     agent any
     {
         tools{
-            maven 'maven'
+              maven 'maven'
         }
         stages{
-            stage("Maven packaging and creating jar")
-            {
+            stage("Maven packaging and creating jar"){
                 steps{
                     script{
                         echo "Building the application"
@@ -18,8 +17,7 @@ pipeline
                 }
 
             }
-            stage("Building Docker Image")
-            {
+            stage("Building Docker Image"){
                 steps{
                     script{
                         echo "Building Docker Image"
@@ -27,8 +25,7 @@ pipeline
                     }
                 }
             }
-            stage("Pushing the image to Docker hub")
-            {
+            stage("Pushing the image to Docker hub"){
                 steps{
                     script{
                         echo "Pushing the image to docker hub"
@@ -38,8 +35,7 @@ pipeline
                     }
                 }
             }
-            stage("Deploying to the server")
-            {
+            stage("Deploying to the server") {
                 steps{
                     script{
                         echo "Deployed the application to the server"
