@@ -4,6 +4,7 @@ pipeline
     
         tools{
               maven 'maven'
+              jdk 'jdk8'
         }
         stages{
             stage("Maven packaging and creating jar"){
