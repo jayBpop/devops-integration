@@ -39,7 +39,7 @@ pipeline
             stage("Deploying to the server") {
                 steps{
                     script{
-                        echo "Deployed the application to the server"
+                        echo "Deployed the application to the server successfully!!!"
                     }
                 }
             }
